@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot do Baralho Cigano</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Tarot do Baralho Cigano</h1>
+
+  <div class="temas">
+    <label for="tema">Escolha um tema:</label>
+    <select id="tema">
+      <option value="amor">Amor</option>
+      <option value="dinheiro">Dinheiro</option>
+      <option value="futuro">Futuro</option>
+    </select>
+  </div>
+
+  <h2>Escolha sua carta</h2>
+
+  <div class="tabuleiro" id="tabuleiro"></div>
+
+  <button id="novoJogo">✨ Embaralhar</button>
+
+  <div id="overlay" class="overlay">
+    <div class="popup">
+      <span class="fechar" onclick="fecharPopup()">✖</span>
+      <img id="cartaVirada" src="" alt="Carta Virada">
+      <p id="mensagem"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
